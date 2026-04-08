@@ -1,0 +1,34 @@
+name: customer_support_env
+description: Customer support ticket triage and resolution environment
+
+observation_space:
+  type: object
+  properties:
+    ticket_id:
+      type: integer
+    ticket_text:
+      type: string
+    category:
+      type:
+        - string
+        - "null"
+    priority:
+      type:
+        - string
+        - "null"
+    status:
+      type: string
+
+action_space:
+  type: object
+  properties:
+    action_type:
+      type: string
+      enum:
+        - classify
+        - set_priority
+        - take_action
+    value:
+      type: string
+
+reward_range: [0.0, 1.0]
