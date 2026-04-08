@@ -1,10 +1,4 @@
----
-title: Customer Support Env
-emoji: 🤖
-colorFrom: blue
-colorTo: green
-sdk: docker
----
+
 
 # Customer Support Ticket Triage OpenEnv Environment
 
